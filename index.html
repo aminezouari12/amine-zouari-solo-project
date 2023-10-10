@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Art Gallery</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+<h1 id="ht"> Zouari Art Gallery</h1>
+    <div class="bg-img">
+      <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#artist">Artist</a>
+        <a href="#artpiece">Art Piece</a>
+        
+        
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+    </div>
+    <h1>Painters:</h1>
+    <div id="myBtnContainer">
+
+      <button class="button active" onclick="filterSelection('all')">All</button>
+<button class="button" onclick="filterSelection('VincentvanGogh')">Vincent van Gogh</button>
+<button class="button" onclick="filterSelection('LeonardodaVinci')">Leonardo da Vinci</button>
+<button class="button" onclick="filterSelection('PabloPicasso')">Pablo Picasso</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column  gallery-item VincentvanGogh">
+        <div class="content">
+          <img
+            src="https://www.expedia.fr/stories/wp-content/uploads/2021/06/176578-share-image.jpg"
+            alt="The Starry Night"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>The Starry Night</h4>
+          <p>
+            Starry Night" by Vincent van Gogh is a renowned painting known for
+            its swirling, vibrant depiction of a starry night sky above a
+            tranquil village, evoking a sense of both awe and serenity.
+          </p>
+        </div>
+      </div>
+      <div class="column  gallery-item VincentvanGogh">
+        <div class="content">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Van_Gogh_The_Olive_Trees..jpg/800px-Van_Gogh_The_Olive_Trees..jpg"
+            alt="Olive Trees"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>Olive Trees</h4>
+          <p>
+            Van Gogh's 'Olive Trees' is a serene depiction of olive groves in
+            the South of France. It showcases his distinctive brushwork and a
+            rich palette, conveying the tranquility of the landscape.
+          </p>
+        </div>
+      </div>
+      <div class="column  gallery-item VincentvanGogh">
+        <div class="content">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Vincent_Willem_van_Gogh_098.jpg/800px-Vincent_Willem_van_Gogh_098.jpg"
+            alt="Ladies of Arles"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>Ladies of Arles</h4>
+          <p>
+            Van Gogh's 'Ladies of Arles' is a captivating portrait featuring
+            three women in vibrant attire, offering a glimpse into the lively
+            spirit of Provence.
+          </p>
+        </div>
+      </div>
+
+      <div class="column  gallery-item LeonardodaVinci">
+        <div class="content">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+            alt="Mona Lisa"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>Mona Lisa</h4>
+          <p>
+            Leonardo da Vinci's 'Mona Lisa' is a timeless masterpiece known for
+            its enigmatic smile and meticulous detail, representing the pinnacle
+            of Renaissance art
+          </p>
+        </div>
+      </div>
+      <div class="column  gallery-item LeonardodaVinci">
+        <div class="content">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Leonardo_da_Vinci_Virgin_of_the_Rocks_%28National_Gallery_London%29.jpg/280px-Leonardo_da_Vinci_Virgin_of_the_Rocks_%28National_Gallery_London%29.jpg"
+            alt="Virgin of the Rocks"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>Virgin of the Rocks</h4>
+          <p>
+            Leonardo da Vinci's 'Virgin of the Rocks' is a mesmerizing artwork
+            featuring the Virgin Mary, Jesus, and John the Baptist in a mystical
+            cave, renowned for its exquisite details and serene atmosphere.
+          </p>
+        </div>
+      </div>
+      <div class="column  gallery-item LeonardodaVinci">
+        <div class="content">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/L%C3%A9onard_de_Vinci%2C_sainte_Anne%2C_Louvre.jpg/270px-L%C3%A9onard_de_Vinci%2C_sainte_Anne%2C_Louvre.jpg"
+            alt="The Virgin and Child with Saint Anne"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>The Virgin and Child with Saint Anne</h4>
+          <p>
+            The Virgin and Child with Saint Anne is an unfinished oil painting
+            by High Renaissance artist Leonardo da Vinci, dated to c. 1501–1519.
+            It depicts Saint Anne, her daughter the Virgin Mary and the infant
+            Jesus.
+          </p>
+        </div>
+      </div>
+
+      <div class="column  gallery-item PabloPicasso">
+        <div class="content">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Mural_del_Gernika.jpg"
+            alt="Guernica"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>Guernica</h4>
+          <p>
+            Guernica is a large 1937 oil painting by Spanish artist Pablo
+            Picasso. It is one of his best-known works, regarded by many art
+            critics as the most moving and powerful anti-war painting in
+            history. It is exhibited in the Museo Reina Sofía in Madrid.
+          </p>
+        </div>
+      </div>
+      <div class="column  gallery-item PabloPicasso">
+        <div class="content">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwVTQy_X2osffv3dXxxf_CrHZQBnT_Qm0DEHrHNTgoVo7z4KPn"
+            alt="Girl before a Mirror"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>Girl before a Mirror</h4>
+          <p>
+            Girl before a Mirror is an oil on canvas painting by Pablo Picasso,
+            which he created in 1932. The painting is a portrait of Picasso's
+            mistress and muse, Marie-Thérèse Walter, who is depicted standing in
+            front of a mirror looking at her reflection.
+          </p>
+        </div>
+      </div>
+      <div class="column  gallery-item PabloPicasso">
+        <div class="content">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThbFVLCW1Jdprc3AwE4F1WRcsCiD0rj2E4O7DgtqSMf3ppHcu3"
+            alt="Portrait of Dora Maar"
+            style="width: 100%"
+            class="myImg"
+          />
+          <h4>Portrait of Dora Maar</h4>
+          <p>
+            Portrait of Dora Maar is a 1937 oil on canvas painting by Pablo
+            Picasso. It depicts Dora Maar, the painter's lover, seated on a
+            chair. It is part of the collection of the Musée Picasso, in Paris,
+            where it is considered to be one of Picasso's masterpieces.
+          </p>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
